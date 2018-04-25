@@ -1,15 +1,37 @@
+body {
+    background: #cddc39;
+}
 .UserForm {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 40vh;
 }
-
+.UserWelcome {
+    position: relative;
+    padding: 100px 0;
+    margin: 30px auto;
+    color: #2196f3;
+    font-size: 35px;
+    font-family: 'The Girl Next Door', cursive;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+.WelcomeBox {
+    display: flex;
+    justify-content: center;
+}
+.Image {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    margin: 0 auto;
+}
 .UserInput {
     padding: 20px;
-    font-size: 2em;
-    border: 0;
-    border-bottom: 1px solid #ccc;
+    font-size: 1.8em;
+    border: 3px inset #2196f3;
     width: 510px;
+    font-family: 'The Girl Next Door', cursive;
 }

@@ -1,6 +1,7 @@
 .MessageForm {
     display: flex;
     flex-direction: row;
+    font-family: 'The Girl Next Door', cursive;
 }
 
 .MessageInput {
@@ -8,4 +9,5 @@
     padding: 20px;
     border: 0;
     border-top: 1px solid #ccc;
+    font-family: 'The Girl Next Door', cursive;
 }
