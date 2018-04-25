@@ -51,17 +51,6 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [
-		new HtmlWebpackPlugin({
-			template: './src/index.html',
-			filename: 'index.html',
-			inject: 'body'
-		}),
-		new webpack.optimize.UglifyJsPlugin(),
-		new OptimizeJsPlugin({
-			sourceMap: false
-		})
-	],
 	devServer: {
   		proxy: {
       		'/socket.io': {
@@ -69,5 +58,6 @@ module.exports = {
           		ws: true
       		}
   		}
-	}
+	},
+	plugins: plugins
 };

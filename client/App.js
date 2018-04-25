@@ -41,10 +41,6 @@ class App extends Component {
 		socket.emit('join', name);
 	}
 
-	render() {
-		return this.state.name !== '' ? this.renderLayout() : this.renderUserForm();
-	}
-
 	renderLayout() {
 		return (
 			<div className={styles.App}>
@@ -75,12 +71,12 @@ class App extends Component {
 	}
 
 	renderUserForm() {
-		return (<UsrForm onUserSubmit={name => this.handleUserSubmit(name)} />)
+		return (<UserForm onUserSubmit={name => this.handleUserSubmit(name)} />)
 	}
 
+	render() {
+		return this.state.name !== '' ? this.renderLayout() : this.renderUserForm();
+	}
 };
 
 export default hot(module)(App);
-
-
-	render.this.state.name

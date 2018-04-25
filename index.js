@@ -6,10 +6,9 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 const UsersService = require('./UsersService');
-
 const userService = new UsersService();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/client'));
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
