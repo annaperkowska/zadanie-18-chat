@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 75vw;
-    padding: 20px;
+    /*width: 75%;*/
+    padding: 20px 0;
+    background: #FFF;
+}
+.Message {
+	padding: 0 20px;
 }
